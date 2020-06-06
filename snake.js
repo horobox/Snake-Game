@@ -11,4 +11,22 @@ function Snake(){
         this.x += this.xSpeed;
         this.y += this.ySpeed;
     }
+    this.changeDir = function(d){
+		if(d === 'Up'){
+			this.xSpeed = 0;
+			this.ySpeed = -scale;
+		}
+		else if(d === 'Down'){
+			this.xSpeed = 0;
+			this.ySpeed = scale;
+		}
+		else if(d === 'Left'){
+			this.xSpeed = -scale;
+			this.ySpeed = 0;
+		}
+		else if(d === 'Right'){
+			this.xSpeed = scale;
+			this.ySpeed = 0;
+		}
+	}
 }
