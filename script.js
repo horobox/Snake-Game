@@ -7,6 +7,8 @@ const scale = 20;
     snake = new Snake();
     
 	window.setInterval(() => {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        snake.update();
 		snake.draw();
 	}, 180);
 }());
